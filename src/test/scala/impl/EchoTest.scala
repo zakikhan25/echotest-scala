@@ -2,6 +2,10 @@ package edu.luc.cs.cs372.echo.impl
 
 import org.scalatest.FunSuite
 
+/**
+ * JUnit-style testing in ScalaTest with individual tests described
+ * by strings and using assertions.
+ */
 class EchoTest extends FunSuite {
 
   test("A simple echo should echo an empty argument") {

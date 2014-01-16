@@ -3,6 +3,9 @@ package edu.luc.cs.cs372.echo.impl
 import org.scalacheck.Properties
 import org.scalacheck.Prop.forAll
 
+/**
+ * Property-based testing using ScalaCheck directly.
+ */
 object EchoSpec extends Properties("Echo") {
 
   val simpleEcho = new SimpleEcho
