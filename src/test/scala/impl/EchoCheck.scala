@@ -5,7 +5,8 @@ import org.scalatest.prop.Checkers
 import org.scalacheck.Prop._
 
 /**
- * Property-based testing in ScalaTest using the Checkers mixin.
+ * Property-based testing in ScalaTest using the Checkers mixin
+ * (preferred over using ScalaCheck directly).
  */
 class EchoCheck extends FunSuite with Checkers {
 
