@@ -2,7 +2,6 @@ package edu.luc.cs.cs372.echo.impl
 
 import org.scalatest.FunSuite
 import org.scalatest.prop.Checkers
-import org.scalacheck.Prop._
 
 /**
  * Property-based testing in ScalaTest using the Checkers mixin.
