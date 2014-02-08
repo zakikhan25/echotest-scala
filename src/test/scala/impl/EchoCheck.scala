@@ -13,13 +13,13 @@ class EchoCheck extends FunSuite with Checkers {
 
   val doubleEcho = new DoubleEcho
 
-  test("A simple echo should echo a nonempty argument") {
+  test("A simple echo should echo its argument") {
     check { (a: String) =>
       simpleEcho.echo(a) == a
     }
   }
 
-  test("A double echo should echo twice a nonempty argument") {
+  test("A double echo should echo twice its argument") {
     check { (a: String) =>
       doubleEcho.echo(a) == a + " " + a
     }
