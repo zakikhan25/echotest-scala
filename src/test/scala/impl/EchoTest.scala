@@ -5,6 +5,8 @@ import org.scalatest.FunSuite
 /**
  * JUnit-style testing in ScalaTest with individual tests described
  * by strings and using assertions.
+ *
+ * [[http://www.scalatest.org/user_guide/selecting_a_style ScalaTest testing styles]]
  */
 class EchoTest extends FunSuite {
 

@@ -5,6 +5,8 @@ import org.scalacheck.Prop.forAll
 
 /**
  * Property-based testing using ScalaCheck directly.
+ *
+ * [[http://www.scalacheck.org ScalaCheck documentation]]
  */
 object EchoSpec extends Properties("Echo") {
 
