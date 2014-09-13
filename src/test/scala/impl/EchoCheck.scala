@@ -26,5 +26,4 @@ class EchoCheck extends FunSuite with Checkers {
       doubleEcho.echo(a) == a + " " + a
     }
   }
-
 }
