@@ -9,7 +9,7 @@ import Assert._
  * Alternatively, one can use
  * [[http://www.scalatest.org/getting_started_with_junit_4_in_scala JUnit with ScalaTest]]
  */
-class EchoJUnit  {
+class EchoJUnit {
 
   @Test
   def testSimpleEmpty(): Unit = {
