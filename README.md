@@ -1,6 +1,7 @@
 # Overview
 
-Very simple example including an App and a few tests (illustrating different testing styles).
+Very simple example including an App and a few tests 
+(illustrating different testing styles).
 
 # Running the app
 
@@ -12,11 +13,14 @@ Very simple example including an App and a few tests (illustrating different tes
 
 # Determining test coverage
 
-    sbt scoverage:test
+    sbt coverage test
+    sbt coverageReport
 	
 Now open this file in a web browser:
 
-    target/scala-2.10/scoverage-report/index.html
+    target/scala-2.11/scoverage-report/index.html
+    
+(In Cloud9, navigate to this file, *right-click* on it, and choose *preview*.)     
 
 # Running a Scala console
 
