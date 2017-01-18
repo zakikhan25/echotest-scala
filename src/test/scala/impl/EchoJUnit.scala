@@ -44,7 +44,8 @@ class EchoJUnit {
     try {
       val result = echos(1).echo("")
       fail("should have gotten an IndexOutOfBoundsException by now!")
-    } catch {
+    }
+    catch {
       case ex: IndexOutOfBoundsException => // all good
     }
   }
