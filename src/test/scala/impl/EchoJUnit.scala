@@ -4,11 +4,11 @@ import org.junit._
 import Assert._
 
 /**
- * Plain JUnit testing without ScalaTest.
- *
- * Alternatively, one can use
- * [[http://www.scalatest.org/getting_started_with_junit_4_in_scala JUnit with ScalaTest]]
- */
+  * Plain JUnit testing without ScalaTest.
+  *
+  * Alternatively, one can use
+  * [[http://www.scalatest.org/getting_started_with_junit_4_in_scala JUnit with ScalaTest]]
+  */
 class EchoJUnit {
 
   @Test
