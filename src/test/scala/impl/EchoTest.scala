@@ -1,6 +1,6 @@
 package edu.luc.cs.cs372.echo.impl
 
-import org.scalatest.FunSuite
+import org.scalatest.funsuite.AnyFunSuite
 
 /**
   * JUnit-style testing in ScalaTest with individual tests described
@@ -8,7 +8,7 @@ import org.scalatest.FunSuite
   *
   * [[http://www.scalatest.org/user_guide/selecting_a_style ScalaTest testing styles]]
   */
-class EchoTest extends FunSuite {
+class EchoTest extends AnyFunSuite {
 
   test("A simple echo should echo an empty argument") {
     assert((new SimpleEcho).echo("") == "")

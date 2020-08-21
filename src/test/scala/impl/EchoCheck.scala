@@ -1,7 +1,7 @@
 package edu.luc.cs.cs372.echo.impl
 
-import org.scalatest.FunSuite
-import org.scalatest.prop.Checkers
+import org.scalatest.funsuite.AnyFunSuite
+import org.scalatestplus.scalacheck.Checkers
 
 /**
   * Property-based testing in ScalaTest using the Checkers mixin
@@ -9,7 +9,7 @@ import org.scalatest.prop.Checkers
   *
   * [[http://www.scalatest.org/user_guide/writing_scalacheck_style_properties Using ScalaTest with Checkers]]
   */
-class EchoCheck extends FunSuite with Checkers {
+class EchoCheck extends AnyFunSuite with Checkers {
 
   val simpleEcho = new SimpleEcho
 
