@@ -20,8 +20,6 @@ Now open this file in a web browser:
 
     target/scala-2.13/scoverage-report/index.html
     
-(In Cloud9, navigate to this file, *right-click* on it, and choose *preview*.)     
-
 # Running a Scala console
 
 This allows you to explore the functionality of the classes in this
