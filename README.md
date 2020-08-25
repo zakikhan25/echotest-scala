@@ -18,7 +18,7 @@ Very simple example including an App and a few tests
 	
 Now open this file in a web browser:
 
-    target/scala-2.11/scoverage-report/index.html
+    target/scala-2.13/scoverage-report/index.html
     
 (In Cloud9, navigate to this file, *right-click* on it, and choose *preview*.)     
 
