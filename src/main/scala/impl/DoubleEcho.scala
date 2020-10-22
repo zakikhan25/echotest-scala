@@ -1,4 +1,4 @@
-package edu.luc.cs.cs372.echo
+package edu.luc.cs.cs371.echo
 package impl
 
 class DoubleEcho extends main.Echo {

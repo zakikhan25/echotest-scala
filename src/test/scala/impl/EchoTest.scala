@@ -1,4 +1,4 @@
-package edu.luc.cs.cs372.echo.impl
+package edu.luc.cs.cs371.echo.impl
 
 import org.scalatest.funsuite.AnyFunSuite
 
