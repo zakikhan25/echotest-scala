@@ -4,7 +4,7 @@ version := "0.3"
 
 scalaVersion := "3.0.0-RC2"
 
-scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked")
+scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked", "-Yexplicit-nulls")
 
 libraryDependencies ++= Seq(
   "com.novocode"      %  "junit-interface" % "0.11"    % Test,  // required only for plain JUnit testing
