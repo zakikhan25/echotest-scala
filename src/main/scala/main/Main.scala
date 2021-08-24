@@ -3,7 +3,7 @@ package main
 
 object Main extends App {
   val echos = Seq(new impl.SimpleEcho, new impl.DoubleEcho)
-  for (e <- echos) {
+  for e <- echos do {
     println(e.echo("hello"))
   }
 }
