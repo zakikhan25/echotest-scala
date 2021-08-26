@@ -1,7 +1,7 @@
 package edu.luc.cs.cs371.echo.impl
 
-import org.junit._
-import Assert._
+import org.junit.*
+import Assert.*
 
 /**
   * Plain JUnit testing without ScalaTest.
