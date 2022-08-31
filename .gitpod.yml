@@ -4,6 +4,6 @@
 
 tasks:
   - init: |
-      sdk install 17.0.4-tem
+      sdk install java 17.0.4-tem
       sdk install sbt
       sbt "Test / compile"
