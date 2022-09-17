@@ -9,7 +9,7 @@ import org.scalatestplus.scalacheck.Checkers
   *
   * [[http://www.scalatest.org/user_guide/writing_scalacheck_style_properties Using ScalaTest with Checkers]]
   */
-class EchoCheck extends AnyFunSuite with Checkers {
+class EchoCheck extends AnyFunSuite with Checkers:
 
   val simpleEcho = new SimpleEcho
 
@@ -26,4 +26,5 @@ class EchoCheck extends AnyFunSuite with Checkers {
       doubleEcho.echo(a) == a + " " + a
     }
   }
-}
+
+end EchoCheck

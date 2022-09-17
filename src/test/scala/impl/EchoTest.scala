@@ -8,7 +8,7 @@ import org.scalatest.funsuite.AnyFunSuite
   *
   * [[http://www.scalatest.org/user_guide/selecting_a_style ScalaTest testing styles]]
   */
-class EchoTest extends AnyFunSuite {
+class EchoTest extends AnyFunSuite:
 
   test("A simple echo should echo an empty argument") {
     assert((new SimpleEcho).echo("") == "")
@@ -38,4 +38,4 @@ class EchoTest extends AnyFunSuite {
       echos(1).echo("")
     }
   }
-}
+end EchoTest

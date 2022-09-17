@@ -8,7 +8,7 @@ import org.scalacheck.Prop.forAll
   *
   * [[http://www.scalacheck.org ScalaCheck documentation]]
   */
-object EchoSpec extends Properties("Echo") {
+object EchoSpec extends Properties("Echo"):
 
   val simpleEcho = new SimpleEcho
 
@@ -21,4 +21,5 @@ object EchoSpec extends Properties("Echo") {
   property("doubleEcho") = forAll { (a: String) =>
     doubleEcho.echo(a) == a + " " + a
   }
-}
+
+end EchoSpec
