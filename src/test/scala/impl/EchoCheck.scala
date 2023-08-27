@@ -15,16 +15,14 @@ class EchoCheck extends AnyFunSuite with Checkers:
 
   val doubleEcho = new DoubleEcho
 
-  test("A simple echo should echo its argument") {
-    check { (a: String) =>
-      simpleEcho.echo(a) == a
-    }
-  }
+  test("A simple echo should echo its argument"):
+    check:
+      (a: String) =>
+        simpleEcho.echo(a) == a
 
-  test("A double echo should echo twice its argument") {
-    check { (a: String) =>
-      doubleEcho.echo(a) == a + " " + a
-    }
-  }
+  test("A double echo should echo twice its argument"):
+    check:
+      (a: String) =>
+        doubleEcho.echo(a) == a + " " + a
 
 end EchoCheck

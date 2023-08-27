@@ -12,29 +12,29 @@ import Assert.*
 class EchoJUnit:
 
   @Test
-  def testSimpleEmpty(): Unit =
+  def testSimpleEmpty: Unit =
     assertEquals("", (new SimpleEcho).echo(""))
 
   @Test
-  def testSimpleNonempty(): Unit =
+  def testSimpleNonempty: Unit =
     assertEquals("hello", (new SimpleEcho).echo("hello"))
 
   @Test
-  def testDoubleEmpty(): Unit =
+  def testDoubleEmpty: Unit =
     assertEquals(" ", (new DoubleEcho).echo(""))
 
   @Test
-  def testDoubleNonempty(): Unit =
+  def testDoubleNonempty: Unit =
     assertEquals("hello hello", (new DoubleEcho).echo("hello"))
 
   @Test
-  def testSimpleUsingList(): Unit =
+  def testSimpleUsingList: Unit =
     val echos = List(new SimpleEcho)
     val result = echos(1).echo("")
     assertEquals("", result)
 
   @Test
-  def testSimpleAlsoUsingList(): Unit =
+  def testSimpleAlsoUsingList: Unit =
     val echos = List(new SimpleEcho)
     try
       val result = echos(1).echo("")

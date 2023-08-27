@@ -10,32 +10,26 @@ import org.scalatest.funsuite.AnyFunSuite
   */
 class EchoTest extends AnyFunSuite:
 
-  test("A simple echo should echo an empty argument") {
+  test("A simple echo should echo an empty argument"):
     assert((new SimpleEcho).echo("") == "")
-  }
 
-  test("A simple echo should echo a nonempty argument") {
+  test("A simple echo should echo a nonempty argument"):
     assert((new SimpleEcho).echo("hello") == "hello")
-  }
 
-  test("A double echo should echo twice an empty argument") {
+  test("A double echo should echo twice an empty argument"):
     assert((new DoubleEcho).echo("") == " ")
-  }
 
-  test("A double echo should echo twice a nonempty argument") {
+  test("A double echo should echo twice a nonempty argument"):
     assert((new DoubleEcho).echo("hello") == "hello hello")
-  }
 
-  test("A simple echo inside a list should still echo an empty argument") {
+  test("A simple echo inside a list should still echo an empty argument"):
     val echos = List(new SimpleEcho)
     val result = echos(1).echo("")
     assert(result == "")
-  }
 
-  test("A simple echo inside a list used wrong should throw an index-out-of-bounds exception") {
+  test("A simple echo inside a list used wrong should throw an index-out-of-bounds exception"):
     val echos = List(new SimpleEcho)
-    intercept[IndexOutOfBoundsException] {
+    intercept[IndexOutOfBoundsException]:
       echos(1).echo("")
-    }
-  }
+
 end EchoTest
