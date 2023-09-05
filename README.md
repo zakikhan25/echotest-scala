@@ -18,8 +18,10 @@ Very simple example including an App and a few tests
 	
 Now open this file in a web browser:
 
-    target/scala-2.13/scoverage-report/index.html
-    
+    target/scala-3.3.0/scoverage-report/index.html
+
+Note that the Scala version number might vary depending on what's defined in the build configuration (`build.sbt`).    
+
 # Running a Scala console
 
 This allows you to explore the functionality of the classes in this
