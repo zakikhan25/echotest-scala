@@ -14,12 +14,12 @@ object EchoSpec extends Properties("Echo"):
 
   val doubleEcho = new DoubleEcho
 
-  property("simpleEcho") = forAll { (a: String) =>
-    simpleEcho.echo(a) == a
-  }
+  property("simpleEcho") = forAll:
+    (a: String) =>
+      simpleEcho.echo(a) == a
 
-  property("doubleEcho") = forAll { (a: String) =>
-    doubleEcho.echo(a) == a + " " + a
-  }
+  property("doubleEcho") = forAll:
+    (a: String) =>
+      doubleEcho.echo(a) == a + " " + a
 
 end EchoSpec
