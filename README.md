@@ -1,7 +1,5 @@
 # Overview
 
-This is an improvement of the readme file.
-
 Very simple example including an App and a few tests 
 (illustrating different testing styles).
 
