@@ -13,12 +13,11 @@ Very simple example including an App and a few tests
 
 # Determining test coverage
 
-    sbt coverage test
-    sbt coverageReport
+    sbt clean coverage test coverageReport
 	
 Now open this file in a web browser:
 
-    target/scala-3.3.0/scoverage-report/index.html
+    target/scala-*/scoverage-report/index.html
 
 Note that the Scala version number might vary depending on what's defined in the build configuration (`build.sbt`).    
 
