@@ -53,10 +53,9 @@ class EchoJUnit:
     val os = new PrintStream(ba)
     System.setOut(os)
     main.Main.main(Array.empty[String])
-    val output = ba.toString
     val lines =
       import scala.language.unsafeNulls
-      output.lines.toList.asScala
+      ba.toString.lines.toList.asScala
     assertEquals("hello", lines(0))
     assertEquals("hello hello", lines(1))
 
