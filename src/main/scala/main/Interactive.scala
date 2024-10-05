@@ -4,8 +4,10 @@ package main
 import edu.luc.cs.cs371.echo.impl.{DoubleEcho, SimpleEcho}
 import mainargs.{Flag, ParserForMethods, arg, main}
 
+import java.io.{FileInputStream, FileNotFoundException}
+
 /** Typesafe equality instance to help with readLine. */
-given CanEqual[String | Null, Null] = CanEqual.derived
+given CanEqual[AnyRef | Null, Null] = CanEqual.derived
 
 object Interactive:
 
@@ -17,8 +19,11 @@ object Interactive:
       @arg(short = 'd', doc = "double echo") doubleEcho: Flag,
       @arg(short = 'p', doc = "enable input prompts") prompt: Flag
   ) =
+    // prompt by default if reading from stdin
+    val doPrompt = prompt.value || isInputFromTerminal
+
     val echo = if doubleEcho.value then new DoubleEcho else new SimpleEcho
-    if prompt.value then
+    if doPrompt then
       print(promptString)
     var line: String | Null = scala.io.StdIn.readLine()
     while line != null do
@@ -26,7 +31,7 @@ object Interactive:
       // terminate on I/O error such as SIGPIPE
       if scala.sys.process.stdout.checkError() then
         sys.exit(1)
-      if prompt.value then
+      if doPrompt then
         print(promptString)
       line = scala.io.StdIn.readLine()
 
@@ -34,5 +39,10 @@ object Interactive:
   def main(args: Array[String]): Unit =
     ParserForMethods(this).runOrExit(args.toIndexedSeq)
     ()
+
+  private def isInputFromTerminal: Boolean =
+    System.console() != null ||
+      System.getProperty("os.name").nn.toLowerCase.nn.contains("windows") &&
+        sys.process.stdin.available() == 0
 
 end Interactive

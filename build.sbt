@@ -13,3 +13,5 @@ libraryDependencies ++= Seq(
   "org.scalacheck"    %% "scalacheck"      % "1.18.0"   % Test,
   "org.scalatestplus" %% "scalacheck-1-18" % "3.2.19.0" % Test
 )
+
+enablePlugins(JavaAppPackaging)
