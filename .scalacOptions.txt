@@ -4,4 +4,4 @@
 -Wvalue-discard
 -language:strictEquality
 -Yexplicit-nulls
--Ysafe-init
+-Wsafe-init
