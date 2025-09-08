@@ -3,11 +3,11 @@ package edu.luc.cs.cs371.echo.impl
 import org.scalatest.funsuite.AnyFunSuite
 
 /**
-  * JUnit-style testing in ScalaTest with individual tests described
-  * by strings and using assertions.
-  *
-  * [[http://www.scalatest.org/user_guide/selecting_a_style ScalaTest testing styles]]
-  */
+ * JUnit-style testing in ScalaTest with individual tests described
+ * by strings and using assertions.
+ *
+ * [[http://www.scalatest.org/user_guide/selecting_a_style ScalaTest testing styles]]
+ */
 class EchoTest extends AnyFunSuite:
 
   test("A simple echo should echo an empty argument"):
@@ -22,9 +22,10 @@ class EchoTest extends AnyFunSuite:
   test("A double echo should echo twice a nonempty argument"):
     assert((new DoubleEcho).echo("hello") == "hello hello")
 
+  // ✅ FIXED
   test("A simple echo inside a list should still echo an empty argument"):
     val echos = List(new SimpleEcho)
-    val result = echos(1).echo("")
+    val result = echos(0).echo("")
     assert(result == "")
 
   test("A simple echo inside a list used wrong should throw an index-out-of-bounds exception"):
@@ -33,3 +34,4 @@ class EchoTest extends AnyFunSuite:
       echos(1).echo("")
 
 end EchoTest
+
